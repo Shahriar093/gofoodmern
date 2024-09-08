@@ -1,0 +1,101 @@
+ :root {
+   font-family: sans-serif !important;
+   line-height: 1.5;
+   font-weight: 400;
+
+   color-scheme: light dark;
+   color: rgba(255, 255, 255, 0.87);
+   background-color: #242424;
+
+   font-synthesis: none;
+   text-rendering: optimizeLegibility;
+   -webkit-font-smoothing: antialiased;
+   -moz-osx-font-smoothing: grayscale;
+ }
+
+ .plus-jakarta-sans-gfont {
+   font-family: "Plus Jakarta Sans", sans-serif !important;
+   font-optical-sizing: auto !important;
+   font-weight: 650 !important;
+   font-style: normal !important;
+ }
+
+ #carousel {
+   max-height: 500px;
+ }
+
+ #foood:hover {
+   transform: translateY(-2px);
+   transition: transform 0.1s ease-in-out 0.1s;
+   /* Adjust the value to control the floating distance */
+   box-shadow: 0 4px 6px rgba(190, 177, 177, 0.1);
+   /* Optional: Add a subtle shadow */
+ }
+
+ /* Cart-Icon */
+ .cart-icon-container {
+   position: relative;
+   display: inline-block;
+ }
+
+ .cart-icon {
+   font-size: 24px;
+   cursor: pointer;
+ }
+
+ .notification-badge {
+   position: absolute;
+   top: -5px;
+   right: -5px;
+   background-color: red;
+   color: white;
+   border-radius: 50%;
+   padding: 5px 10px;
+   font-size: 10px;
+   font-weight: bold;
+   text-align: center;
+ }
+
+ /* delete cart */
+ .deleteCart :hover {
+   cursor: pointer;
+ }
+
+ /* cart design */
+ /* Ensure the portal overlay covers the entire viewport */
+ .portal-overlay {
+   position: fixed;
+   top: 0;
+   left: 0;
+   width: 100vw;
+   height: 100vh;
+   background: rgba(0, 0, 0, 0.5);
+   /* Semi-transparent background */
+   display: flex;
+   justify-content: center;
+   align-items: center;
+   z-index: 1000;
+   /* Make sure the portal is on top of other elements */
+ }
+
+ .portal-content {
+   background-color: white;
+   padding: 10px;
+   border-radius: 8px;
+   box-shadow: 0 2px 10px rgba(0, 0, 0, 0.2);
+   max-width: 90%;
+   max-height: 90%;
+   overflow: auto;
+ }
+
+ /* formBody */
+
+ .formBody {
+   background-image:
+     linear-gradient(to bottom, rgba(22, 27, 22, 0.85), rgba(30, 33, 30, 0.85)),
+     url('https://plus.unsplash.com/premium_photo-1673108852141-e8c3c22a4a22?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MXx8Zm9vZHxlbnwwfHwwfHx8MA%3D%3D');
+   -webkit-background-size: cover;
+   -moz-background-size: cover;
+   -o-background-size: cover;
+   background-size: cover;
+ }
