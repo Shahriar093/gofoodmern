@@ -8,12 +8,12 @@ export const CartProvider = ({ children }) => {
     const handleAddToCart = async (data) => {
         // console.log(data);
         if (data) {
-            await axios.post(`http://localhost:8080/${localStorage.getItem('userId')}/add`, data)
+            await axios.post(`https://gofoodm.onrender.com/${localStorage.getItem('userId')}/add`, data)
                 .then(res => console.log(res.data))
                 .catch(error => console.log(error));
         }
         // getting the cart
-        await axios.get(`http://localhost:8080/${localStorage.getItem('userId')}/getcart`)
+        await axios.get(`https://gofoodm.onrender.com/${localStorage.getItem('userId')}/getcart`)
             .then((res) => {
                 setItemN(res.data.length);
             })

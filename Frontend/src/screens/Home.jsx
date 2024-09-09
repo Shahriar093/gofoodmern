@@ -9,7 +9,7 @@ export default function Home() {
     const [categories, setCategories] = useState([]);
     const [srchFood, setsrchFood] = useState("");
     const loadData = async () => {
-        let result = await axios.get('http://localhost:8080/home/')
+        let result = await axios.get('https://gofoodm.onrender.com/home/')
         setItems(result.data[0]);
         setCategories(result.data[1]);
     }

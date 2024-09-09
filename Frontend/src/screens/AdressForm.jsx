@@ -9,7 +9,7 @@ export default function AdressForm() {
     let navigate = useNavigate();
     const handleSubmission = async (e) => {
         e.preventDefault();
-        axios.delete(`http://localhost:8080/${localStorage.getItem('userId')}/deletecart`).then(res => console.log(res.data));
+        axios.delete(`https://gofoodm.onrender.com/${localStorage.getItem('userId')}/deletecart`).then(res => console.log(res.data));
         alert('Ordered Successfully. Product will be delivered within 1 Crore year. Thank you 😊!')
         handleAddToCart();
         navigate('/');

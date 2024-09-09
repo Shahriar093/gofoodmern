@@ -13,7 +13,7 @@ export default function MyOrder() {
         settaka(tot);
     }
     const viewOrder = async () => {
-        await axios.get(`http://localhost:8080/${localStorage.getItem('userId')}/vieworder`)
+        await axios.get(`https://gofoodm.onrender.com/${localStorage.getItem('userId')}/vieworder`)
             .then((res) => {
                 let data = res.data;
                 setItems(data);

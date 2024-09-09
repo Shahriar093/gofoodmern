@@ -11,7 +11,7 @@ export default function Signup() {
     }
     const handleSubmit = async (e) => {
         e.preventDefault();
-        await axios.post('http://localhost:8080/api/create', {
+        await axios.post('https://gofoodm.onrender.com/api/create', {
             username: crededentials.username,
             email: crededentials.email,
             password: crededentials.password

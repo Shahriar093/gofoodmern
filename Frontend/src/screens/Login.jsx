@@ -13,7 +13,7 @@ export default function Login() {
     }
     const handleSubmit = async (e) => {
         e.preventDefault();
-        let response = await axios.post('http://localhost:8080/api/login', {
+        let response = await axios.post('https://gofoodm.onrender.com/api/login', {
             email: crededentials.email,
             password: crededentials.password
         }).then((res) => {

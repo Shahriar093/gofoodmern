@@ -17,7 +17,7 @@ export default function MyCart() {
         settaka(tot);
     }
     const viewCart = async () => {
-        await axios.get(`http://localhost:8080/${localStorage.getItem('userId')}/getcart`)
+        await axios.get(`https://gofoodm.onrender.com/${localStorage.getItem('userId')}/getcart`)
             .then((res) => {
                 let data = res.data;
                 setItems(data);
@@ -25,7 +25,7 @@ export default function MyCart() {
             })
     }
     const handleRemove = async (id) => {
-        await axios.delete(`http://localhost:8080/${id}/removecart`)
+        await axios.delete(`https://gofoodm.onrender.com/${id}/removecart`)
             .then(res => console.log(res))
             .catch(err => console.log(err));
         viewCart();
