@@ -19,7 +19,7 @@ export default function AdressForm() {
         <div className='formBody'>
             <Navbar />
             <div className='row'>
-                <form className='col-8 offset-3 needs-validation' novalidate onSubmit={handleSubmission}>
+                <form className='col-8 offset-3 needs-validation' onSubmit={handleSubmission} novalidate>
                     <h2 className='offset-2'>
                         Delievery Details
                     </h2>
